@@ -44,3 +44,40 @@ function getCities(event) {
 document
   .querySelector("select[name=uf]")
   .addEventListener("change", getCities)
+
+  //itens de coleta
+
+const itemsToCollect = document.querySelectorAll(".items-grid li")
+
+for (let item of itemsToCollect){
+  item.addEventListener("click", handleSelectedItem)
+}
+
+const collectedItems = document.querySelector("input[name=items]")
+
+let selectedItems =[]
+
+function handleSelectedItem (event){
+  const ItemLi = event.target
+
+  ItemLi.classList.toggle("selected")
+  
+  const itemID = event.target.dataset.id
+
+  const alreadySelected = selectedItems.findIndex( item => {
+    const intemFound = itme == itemId
+    return itemFound
+  })
+
+  if( alreadySelected >= 0){
+    const filteredItems = selectedItems.filter( item => {
+      const itemIsDifferent = item != itemId
+      return itemIsDifferent
+    })
+
+    selectedItems = filteredItems  
+  } else {
+    selectedItems.value = selectedItems
+  }
+
+}
