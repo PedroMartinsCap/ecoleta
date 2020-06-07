@@ -15,6 +15,9 @@
   #page-home main {
     align-items: center;
   }
+  #page-search-results .cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 1700px) {
@@ -39,6 +42,9 @@
   #page-home header a {
     font-size: 12px;
     align-items: center;
+  }
+  #page-search-results .cards {
+    grid-template-columns: 1fr;
   }
 }
 
