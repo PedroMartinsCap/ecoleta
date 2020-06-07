@@ -30,6 +30,10 @@
   #page-home {
     background-position-y: 200px;
   }
+
+  #page-search-results .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 430px){
