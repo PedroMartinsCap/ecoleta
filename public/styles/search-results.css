@@ -196,6 +196,9 @@ main img {
 
   border-radius: 8px 8px 0 0;
 }
+main .card {
+  background-color: #f0f0f9;
+}
 
 main .card h1 {
   font-size: 32px 0 24px;
@@ -219,9 +222,10 @@ main .card h3 {
 
 main .card p {
   font-size: 16px;
-  line-height: 26px
+  line-height: 26px;
 
   color: #6c6c80;
+
 }
 
 body::after {
