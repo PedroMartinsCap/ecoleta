@@ -26,10 +26,22 @@ server.get("/", (req, res) => {
 });
 
 server.get("/create-point", (req, res) => {
+// req.query: Query Strings da nossa url
+// console.log(req.query)
   return res.render("create-point.html");
 });
 
 server.get("/search", (req, res) => {
+  const search = req.query.search
+
+  if( search == ""){
+    //pesquisa vazia
+
+    //mostrar a págian html com os dados do banco de dados
+    return res.render("search-results.html", { total: 0 });
+  }
+
+  //pegar dados do db
   db.all(`SELECT * FROM places`, function (err, rows) {
     if (err) {
       return console.log(err);
@@ -42,8 +54,10 @@ server.get("/search", (req, res) => {
 });
 
 server.post("/savepoint", (req, res) => {
+  //req.body: O corpo do nosso formulário
   console.log(req.body);
 
+  //Inserir dados no db
   const query = `
     INSERT INTO places (
       image,
@@ -67,12 +81,15 @@ server.post("/savepoint", (req, res) => {
 
   function afterInsertData(err) {
     if (err) {
-      return console.log(err);
+      console.log(err);
+      return res.send("Erro no cadastro!")
     }
     console.log("cadastrado com sucesso");
     console.log(this);
 
-  }
+    return res.render("create-point.html", {saved: true})
+
+   }
 
   db.run(query, values, afterInsertData);
 

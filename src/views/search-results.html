@@ -23,8 +23,10 @@
         {% for place in places %}
           <div class="card">
             <img src="{{ place.image }}" alt="{{ place.nome }}">
-            <h1>{{ place.nome }}</h1>
-            <h3>{{ place.items }}</h3>
+            <h1>{{ place.name }}</h1>
+            <div>
+              <h3>{{ place.items }}</h3>
+            </div>
             <p>
               {{ place.city }},
               {{ place.state }}
