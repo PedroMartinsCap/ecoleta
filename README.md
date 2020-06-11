@@ -22,7 +22,10 @@
 
 ## :green_book: Projeto
 
-<h4> Projeto desenvolvido durante o evento Next Level Week da Rocketseat. Que tem o objetivo de promover pontos de coleta, facilitando que pessoas cadastrem novos pontos de coleta ou pesquisem por pontos na cidade desejada </h4>
+<p align="justify"> 
+Projeto desenvolvido durante o evento Next Level Week da Rocketseat. <br>
+O Projeto tem o objetivo de promover pontos de coleta, facilitando que pessoas cadastrem novos pontos ou pesquisem por pontos na cidade desejada 
+</p>
 
 ## :computer: Tecnologias
 
