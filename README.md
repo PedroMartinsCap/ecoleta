@@ -1,6 +1,5 @@
-<img align="center" alt="React GitHub Repo List" src="public/assets/
-home-background.svg" />
 <h1 align="center">
+   <img  width="200px" alt="ecoleta image" src="public/assets/image-github.png"/>
     <br>
     Ecoleta Web
 </h1>
