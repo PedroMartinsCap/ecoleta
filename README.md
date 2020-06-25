@@ -26,6 +26,7 @@ O Projeto tem o objetivo de promover pontos de coleta, facilitando que pessoas c
 - CSS
 - Javascript
 - Node
+- Nunjucks
 
 ## :memo: License
 This project is under the MIT license. See the [LICENSE](https://github.com/lukemorales/nubank-react-native/blob/master/LICENSE) for more information.
